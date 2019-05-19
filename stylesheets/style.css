@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#banner {
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+}
+
+#logo-container img{
+    height: 50%;
+    padding: 20px;
+}
+
+#language-picker{
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-right: 30px;
+}
+
+#language-picker li{
+    margin-left: 20px;
+}
+
+#explore{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#arrow{
+    width:0px;
+    height:0px;
+    border-left:12px solid transparent;
+    border-right:12px solid transparent;
+    border-top:12px solid #fff;
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#games-container{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+#games-container div{
+    width: 33.3333%;
+    overflow: hidden;
+    background-color: black;
+}
+
+#games-container img{
+    width: 100%;
+    transition: all 1s;
+}
+
+#games-container img:hover{
+    transform: scale(1.05);
+    filter: saturate(1.5);
+    cursor: pointer;
+}
+
+#console-container{
+    width: 100%;
+    text-align: center;
+}
+
+#console-container img{
+    width: 70%;
+    transition: all 1s;
+    padding-bottom: 60px;
+}
+
+#console-info{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#console-info h3{
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    color: #fc0c18;
+}
+
+#console-info h2{
+    margin: 0;
+    font-size: 36px;
+}
+
+#console-info p{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+footer{
+    width: 100%;
+    background-color: #353745;
+    color: #7f829a;
+    text-align: center;
+}
+
+footer img{
+    width: 300px;
+}
+
+footer p{
+    padding: 30px 10px 40px 10px;
+    border-top: 1px solid #7f829a;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+#info-footer{
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    font-weight: bolder;
+}
+
+#info-footer ul{
+    width: 33.3333%;
+    list-style: none;
+    color: white;
+    padding-bottom: 50px;
+}
+
+#info-footer li{
+    color: #7f829a;
+    padding-top: 20px;
+}
+
+#info-footer li:hover{
+    color: white;
+    cursor: pointer;
+}
